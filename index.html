@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pessoa.css">
+    <title>Tabela de pessoas</title>
+</head>
+<body>
+        <div id="tabela">
+        <table id="pessoas" border="1" cellpadding="6">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        <span id="botoes"></span>
+        <span id="input"></span>
+        </div>
+    <br>
+    <select onchange="carregarDados()">
+        <option value="0" hidden></option>
+        <option value="BR">Brasil</option>
+        <option value="US">Estados Unidos</option>
+        <option value="GB">Reino Unido</option>
+        <option value="FR">França</option>
+        <option value="ES">Espanha</option>
+        <option value="NZ">Nova Zelândia</option>
+    </select>
+    <div id="foto" onclick="fecharFoto()">
+        <img id="fotoImg" src="" alt="Foto ampliada">
+    </div>
+
+    <script src="pessoa.js"></script>
+</body>
+</html>
