@@ -11,6 +11,6 @@ Além disso, Há um sitema de ordenar com botões por idade e nome e de filtrage
 *Filtragem em tempo real por nome.
 
 ## Linguagens
-*Htlm
-*Css
-*Js
+* Htlm
+* Css
+* Js
