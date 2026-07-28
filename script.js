@@ -26,7 +26,7 @@ function renderizarTabela(lista) {
             <td><img src="${pessoa.picture.thumbnail}" alt="Foto de ${pessoa.name.first}" onclick="abrirFoto('${pessoa.picture.large}')"/></td>
             <td>${pessoa.name.first} ${pessoa.name.last}</td>
             <td>${pessoa.dob.age}</td>
-            <td>${pessoa.location.country}</td>
+            <td>${pessoa.location.state}</td>
             <td><a href="mailto:${pessoa.email}">${pessoa.email}</a></td>
         </tr>
         `);
@@ -35,7 +35,7 @@ function renderizarTabela(lista) {
             <th>Foto</th>
             <th>Nome</th>
             <th>Idade</th>
-            <th>Nacionalidade</th>
+            <th>Estado</th>
             <th>Email</th>
         </tr>`;
     document.querySelector("#pessoas tbody").innerHTML = linhas.join("") || `<tr><td colspan="5">Nenhum resultado encontrado</td></tr>`;
